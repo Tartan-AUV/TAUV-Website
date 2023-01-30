@@ -68,4 +68,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## How to Run Locally
 
 Make sure PHP, Composer, Node, and NPM are properly installed on your device
-Open VSCode and pull the repository from Github 
+- Open VSCode and pull the repository from Github using VSCode's Github extension
+- Make sure you are in the website directory and MAMP is running
+- use the command : php artisan serve : 
+
