@@ -72,3 +72,9 @@ Make sure PHP, Composer, Node, and NPM are properly installed on your device
 - Make sure you are in the website directory and MAMP is running
 - use the command : php artisan serve : 
 
+## Using Git commands from VSCode
+
+While working in VSCode
+- Any code you want to work on needs to be in a local branch
+- Once done, push the branch to the repository
+- If finalized and ready to merge with main, open a PULL REQUEST for review
