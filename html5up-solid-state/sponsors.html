@@ -12,48 +12,103 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
-        
-<!-- Footer -->
-        <section id="footer">
-            <div class="inner">
-                <h2 class="major">Get in touch</h2>
-                <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-                <form method="post" action="#">
-                    <div class="fields">
-                        <div class="field">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" />
-                        </div>
-                        <div class="field">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
-                        </div>
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="4"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" /></li>
-                    </ul>
-                </form>
-                <ul class="contact">
-                    <li class="icon solid fa-home">
-                        Untitled Inc<br />
-                        1234 Somewhere Road Suite #2894<br />
-                        Nashville, TN 00000-0000
-                    </li>
-                    <li class="icon solid fa-phone">(000) 000-0000</li>
-                    <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-                    <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-                    <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-                    <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </section>
+    <style>
+        img{
+            width:375px;
+            height:300px;
+        }
 
-</div>
+        .center{
+            justify-content: space-around
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+        }
+        
+    </style>
+	<body class="is-preload">
+        <div id="page-wrapper">
+            <!-- Header -->
+                <header id="header">
+                    <h1><a href="index.html">Tartan AUV</a></h1>
+                        <nav>
+                            <ul>
+                                <a href="index.html">Home</a>
+                                <a href="members.html">About Us</a>
+                                <a href="garage.html">The Garage</a>
+                                <a href="blog.html">Blog</a>
+                                <a href="sponsors.html">Our Sponsors</a>
+                            </ul>
+                        </nav>
+                </header>
+
+            <!-- Wrapper -->
+                <section id="wrapper">
+                    <section id ="4" class="wrapper alt style1">
+                        <div class="inner"> 
+                            <div class="grid-container">
+                                <img src="images/AC.jpg">
+                                <img src="images/molex.jpg">
+                                <img src="images/Altium.jpg">
+                                <img src="images/leidos.jpg">
+                                <img src="images/NAPA.jpg">
+                                <img src="images/BO.jpg">
+                                <img src="images/BT.jpg">
+                                <img src="images/CMU.jpg">
+                                <img src="images/LM.jpg">
+                                <img src="images/imc.jpg">
+                                <img src="images/nvidia.jpg">
+                                <img src="images/PCBway.jpg">
+                                <img src="images/RI.jpg">
+                                <img src="images/rpl4.jpg">
+                                <img src="images/xsens.jpg">
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+            <!-- Footer -->
+                <section id="footer">
+                    <div class="inner">
+                        <h2 class="major">Become A Sponsor!</h2>
+                        <p>Sponsors of TartanAUV will be displayed with pride on our vehicle, team banners, apparel, website, and at every collegiate and outreach event that our team attends. Become a sponsor to also gain access to team recruiting information and resume book!</p>
+                        <form method="post" action="#">
+                            <div class="fields">
+                                <div class="field">
+                                    <label for="name">Company Name</label>
+                                    <input type="text" name="name" id="name" />
+                                </div>
+                                <div class="field">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" />
+                                </div>
+                                <div class="field">
+                                    <label for="message">Leave A Meassage (Optional)</label>
+                                    <textarea name="message" id="message" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><input type="submit" value="Sponsor Us" /></li>
+                            </ul>
+                        </form>
+                        <ul class="contact">
+                            <li class="icon solid fa-home">
+                                Robotics Institute, Carnegie Mellon Univerisity <br />
+                                5000 Forbes Ave, Pittsburgh, PA 15213 <br />
+                                Pittsburgh, PA 15213
+                            </li>
+                     <!--   <li class="icon solid fa-phone">(000) 000-0000</li> -->
+                            <li class="icon solid fa-envelope"><a href="#">team@tartanauv.com</a></li>
+                            <li class="icon brands fa-instagram"><a href="#">instagram.com/tartanauv</a></li>
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+                </section>
+        </div>
