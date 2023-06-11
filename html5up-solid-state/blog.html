@@ -11,6 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            .image-big{
+                height: 95%;
+                width: 100%;
+            }
+
+            .image-small{
+                height: 200px;
+                width: 40%;
+            }
+        </style>
 	</head>
 	<body class="is-preload">
         <div id="page-wrapper">
@@ -27,3 +38,79 @@
                             </ul>
                         </nav>
                 </header>
+            <!-- Blog Layout -->
+                <section id="blog">
+                    <div class="header">
+                        <h2 style="margin:0px">TAUV Blog</h2>
+                    </div>
+                    <div class="row">
+                        <div class="leftcolumn">
+                        <div class="card">
+                            <h2>ACOUSTICS ENCLOSURE - June 9, 2023</h2>
+                            <h5>Production of our acoustics subsystem</h5>
+                            <div class="fakeimg"><img class="image-small" src="images/acoustics1.jpg"><img class="image-small" src="images/acoustics0.png"><img class="image-small" src="images/acoustics3.jpg"></div>
+                            <p>
+                                We began designing the updated electronics enclosure for our new research project, 
+                                reviving our 2019 vehicle “Albatross”. We manufactured the mounts for the central computer, 
+                                power connectors, cameras, and navigation sensors.
+                            </p>
+                            <p>
+                                We also designed a retrofitted mount for our new acoustics enclosure which contains the 
+                                electronics necessary for detecting underwater pings during competition. It will be mounted 
+                                on the parallel aluminum tubes similar to our thrusters, supporting the electronics tube 
+                                which will go above the battery and power board end of the vehicle. This will also help 
+                                with buoyancy on that end of the robot.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h2>NEW POWER BOARD - June 1, 2023</h2>
+                            <h5>Updates on the production of our new, in-house designed, power board</h5>
+                            <div class="fakeimg"><img class="image-big" src="images/PowerBoard.png"></div>
+                            <p>
+                                The next 1-2 revs of the current power stack will use a very similar architecture to that of the current rev. 
+                                Some notable improvements will be as follows: 
+                                <ul>
+                                    <li><h3>New V12P0 regulator circuit</h3></li>
+                                    <p>
+                                    The first rev's PMIC has been extremely problematic and issues are still ongoing. The plan is to swap 
+                                    over to a chip from Vicor which has no external mosfet requirements. While the peak output current is not 
+                                    capable of meeting our requirements on its own, the chip can be placed in parallel operation to improve current 
+                                    capacity. This will also help reduce BOM cost and simplicity as one circuit can be DNP'd in the event we do not 
+                                    need the full current capacity.
+                                    </p>
+                                    <li><h3>Quality of life upgrades</h3></li>
+                                    <p>
+                                    We are sticking with an arduino for our onboard microprocessor until the basic layout and features are met. 
+                                    To improve the I/O available, analog multiplexers are being used for sense lines to connect 8 inputs to one 
+                                    pin. Other improvements include jumpers to easily toggle power on and off for the board without the need for 
+                                    external hardware like the key or thruster kill switch. Finally, the silkscreen is being modified to make 
+                                    readability and debugging easier.
+                                    </p>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+                        <div class="rightcolumn">
+                        <div class="card" style="text-align:center; justify-content:center">
+                            <h2>Our latest Water Tests</h2>
+                                <div class="fakeimg" style="justify-content:center; display:block">
+                                <video muted autoplay loop style="width:100%"><source src="images/watertest1.mp4" type="video/mp4"></video>
+                                <video muted autoplay loop style="width:100%"><source src="images/watertest1.mp4" type="video/mp4"></video>
+                                <video muted autoplay loop style="width:100%"><source src="images/watertest1.mp4" type="video/mp4"></video>
+                                <video muted autoplay loop style="width:100%"><source src="images/watertest1.mp4" type="video/mp4"></video>
+                                <video muted autoplay loop style="width:100%"><source src="images/watertest1.mp4" type="video/mp4"></video>
+                                </div>
+                        </div>
+                        <div class="card">
+                            <h3>Other Posts</h3>
+                            <div class="fakeimg">Image</div><br>
+                            <div class="fakeimg">Image</div><br>
+                            <div class="fakeimg">Image</div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!--<div class="footer">
+                        <h2>Footer</h2>
+                    </div>-->
+                </section>
